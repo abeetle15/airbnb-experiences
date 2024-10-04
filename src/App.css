@@ -1,0 +1,113 @@
+/* ---------------------------------- vars ---------------------------------- */
+:root {
+  --primary: #FF5A5F;
+  --dark: #222222;
+}
+/* ---------------------------------- nav ---------------------------------- */
+nav {
+  padding: 1.5rem;
+  padding-right: 2.1rem;
+  border: 1px solid transparent; 
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 110px;
+}
+
+.center-links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.link-inactive {
+  color: #737373;
+}
+
+nav span:hover {
+  cursor: pointer;
+}
+
+/* ---------------------------------- hero ---------------------------------- */
+.hero {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.photo-group {
+  width: max(48%, 300px);
+  margin: auto;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+h2 {
+  font-weight: 200;
+  max-width: 90%;
+}
+/* ---------------------------------- cards --------------------------------- */
+.card-carousel {
+  display: flex;
+  gap: 1.8rem;
+  overflow: auto;
+  height: 500px;
+  margin: 0 1.5rem;
+}
+
+.card-cont {
+  width: 250px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-cont:hover {
+  cursor: pointer;
+}
+
+.card-photo {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.like-icon {
+  position: relative;
+  top: 47px;
+  left: 210px;
+  height: 30px;
+  width: 30px;
+  opacity: 0.75;
+  transition: 125ms;
+}
+
+.like-icon:hover {
+  transform: scale(1.15);
+}
+
+.rating-cont {
+  margin-top: 0.2rem;
+  display: flex;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.star-icon {
+  height: 20px;
+}
+
+.card-title {
+  font-weight: 500;
+  margin: 0.3rem 0 0.2rem;
+}
+
+.price-text {
+  font-weight: 300;
+}
